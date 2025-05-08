@@ -53,6 +53,18 @@
           font-size: 2rem;
         }
       }
+      .fade-in {
+        opacity: 0;
+        animation: fadeIn 1s ease-in forwards;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
     </style>
     <script defer src="assets/js/main.js"></script>
   </head>
@@ -139,9 +151,8 @@
             >
               <p style="font-weight: bold">Outlook</p>
               <p style="font-weight: bold">
-                <p class="fw-bold">
-                  <i class="fa-solid fa-pencil"></i> Last updated:<p id="dateDisplay"></p>
-                </p>
+                <i class="fa-solid fa-pencil"></i> Last updated:
+                <span id="dateDisplay"></span>
               </p>
               <p style="font-weight: bold">
                 <span><i class="fa-solid fa-thumbs-up"></i></span> 55%
@@ -313,13 +324,13 @@
                   Useful links
                 </h6>
                 <p>
-                  <a class="text-white" href="#">How to set up Mozilla?</a>
+                  <a class="text-white" href="index.html">How to set up Mozilla?</a>
                 </p>
                 <p>
-                  <a class="text-white" href="#">How to set up Outlook?</a>
+                  <a class="text-white" href="assets/html/outlook.html">How to set up Outlook?</a>
                 </p>
                 <p>
-                  <a class="text-white" href="#">How to set up Google Mail send As?</a>
+                  <a class="text-white" href="assets/html/gmailguideline.html">How to set up Google Mail send As?</a>
                 </p>
                 <p>
                   <a class="text-white" href="#help">Help</a>
