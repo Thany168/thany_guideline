@@ -21,7 +21,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    
+    <link rel="stylesheet" href="/assets/css/styles.css" />
     <style>
       * {
         padding: 0;
@@ -66,12 +67,17 @@
         }
       }
     </style>
-    <script defer src="assets/js/main.js"></script>
+    <script defer src="../js/main.js"></script>
   </head>
   <body>
     <header
       class="bg-primary text-white text-center py-3"
-      style="display: flex; justify-content: space-between; align-items: center; padding: 0 2rem;"
+      style="
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+      "
     >
       <ul style="list-style: none; margin: 0; padding: 0">
         <li>
@@ -96,25 +102,35 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Mozilla Thunderbird</a>
+              <a class="nav-link" href="/index.html">Mozilla Thunderbird</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="assets/html/outlook.html">Microsoft Outlook</a>
+              <a class="nav-link" href="#">Microsoft Outlook</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="assets/html/gmailguideline.html">Google Mail Send As</a>
+              <a class="nav-link" href="./gmailguideline.html"
+                >Google Mail Send As</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#">Contact</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#help">Help</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
           </ul>
           <ul></ul>
           <ul></ul>
           <ul>
             <img
-              style="width: 40px; height: 40px; position: absolute; top: 53%; margin-top: 7px; left: 50%; transform: translate(-50%, -50%);"
-              src="images/outlook.png"
+              style="
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                top: 53%;
+                margin-top: 7px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              "
+              src="/images/outlook.png"
               alt="Outlook Icon"
             />
           </ul>
@@ -129,25 +145,28 @@
             <a href="">Installation and Updates /</a>
             <p>How to install Outlook on Windows</p>
           </section>
-          <section class="main-mt">
-            <nav class="image-mt">
-              <img
-                src="images/1614526-0-28529800-1742287768-outlook-cheat-sheet-primary-2000px-removebg-preview.png"
-                alt="Outlook Cheat Sheet"
-              />
-            </nav>
-          </section>
+          <section class="main-mt"></section>
           <section class="header-mt">
             <h2>How to download and install Outlook on Windows</h2>
             <p style="font-size: 1.5rem; padding: 1rem 0">
               (Redirected from
               <span
-                style="color: #0509ff; text-decoration: underline; cursor: pointer"
+                style="
+                  color: #0509ff;
+                  text-decoration: underline;
+                  cursor: pointer;
+                "
                 >How to download and install Outlook on Windows</span
               >)
             </p>
             <div
-              style="display: flex; align-items: center; gap: 1.5rem; border-bottom: 1px solid black; padding: 2rem 0;"
+              style="
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+                border-bottom: 1px solid black;
+                padding: 2rem 0;
+              "
             >
               <p style="font-weight: bold">Outlook</p>
               <p style="font-weight: bold">
@@ -173,26 +192,28 @@
                 in any browser, such as Microsoft Edge
               </p>
               <p>
-                2. Click the <button>Download</button> button. The Outlook
-                Installer that downloads will automatically offer you the best
-                available version of Outlook for your Computer.
+                2. Click the
+                <button class="btn btn-outline-primary">Download</button>
+                button. The Outlook Installer that downloads will automatically
+                offer you the best available version of Outlook for your
+                Computer.
               </p>
-              <img src="images/image.png" alt="Download Button" />
+              <img src="/images/downloadOutlook.png" alt="Download Button" />
               <p class="mt-5">
                 3. Click Open file in the Downloads notification on Microsoft
                 Edge to start the process.
               </p>
-              <img src="images/OpenFile.png" alt="Open File Prompt" />
+              <img src="/images/openFile.png" alt="Open File Prompt" />
               <p class="mt-5">
                 4. In other browsers, you may need to first save the Outlook
                 installer to your computer, then open the file you <br />
                 , Just waiting the updates...
               </p>
-              <img src="images/step3.png" alt="Installation Step 3" />
+
               <p class="mt-5">
                 5. Click Update Button and wait the process again.
               </p>
-              <img src="images/ClicUp.png" alt="Update Button" />
+              <img src="/images/ClickUp.png" alt="Update Button" />
               <p class="mt-5">
                 6. Choose your Microsoft or your Gmail Account if you have, but
                 you don't have acc you can click
@@ -204,50 +225,51 @@
                 and <br />
                 click continue button
               </p>
-              <img src="images/setemail.png" alt="Set Email Account" />
+              <img src="/images/chooseemail.png" alt="Set Email Account" />
               <div class="row mt-5">
-                <div class="col-lg-6">
-                  Enter Password...
-                  <img src="images/setpassword.png" alt="Set Password" />
+                <div class="col-lg-12">
+                  After lick next button please enter Password :
                 </div>
-                <div class="col-lg-6">
-                  Enter First Name and Last ...
-                  <img src="images/SetUsername.png" alt="Set Username" />
+                <div class="col-lg-12">
+                  And Enter First Name and Last ...
+                  <img src="/images/setNam.png" alt="Set Username" />
                 </div>
               </div>
               <p>7. And waiting for your account email provider</p>
-              <img src="images/Screenshot 2025-04-01 141434.png" alt="Account Setup" />
-              <p>
+
+              <p class="mt-5">
                 8.Microsoft respects your privacy,Enter code and please click
                 Next button.
                 <br />
               </p>
-              <img src="images/Success.png" alt="Success Screen" />
-              <p>
+              <img src="/images/enterCode.png" alt="Success Screen" />
+              <p class="mt-5">
                 9.So, Your Setup is success, Any Question you keep yourselt.
-              </p>
-              <img src="images/Done.png" alt="Setup Complete" />
+              </p class="mt-5">
+              <img src="/images/outlookSuccess.png" alt="Setup Complete" />
               <p class="mt-5">
                 10. ALso you can open file word and share to your friend or your
                 family...
               </p>
-              <img src="images/Word.png" alt="Word Document" />
-              <img src="images/powerpoint.png" alt="PowerPoint" />
+              <img src="/images/word.png" alt="Word Document" />
+              <img src="/images/power.png" alt="PowerPoint" />
               <p class="mt-4">
-                The page lists various Microsoft 365 applications, including Word,
-                Excel, PowerPoint, OneDrive, Outlook, Teams, and Clipchamp, with
-                brief descriptions of their functionalities. Additional apps such
-                as Calendar, Designer, Editor, Forms, Lists, Loop, Microsoft
-                Defender, OneNote, People, Power Automate, Reading Coach, Sway,
-                and To Do are also featured under the "More from Microsoft 365"
-                section, each with a short description of their purpose. The
-                interface includes options to "Install apps" and a "Buy Microsoft
-                365" button.
-                <img src="images/fulloption.png" alt="Microsoft 365 Options" />
+                The page lists various Microsoft 365 applications, including
+                Word, Excel, PowerPoint, OneDrive, Outlook, Teams, and
+                Clipchamp, with brief descriptions of their functionalities.
+                Additional apps such as Calendar, Designer, Editor, Forms,
+                Lists, Loop, Microsoft Defender, OneNote, People, Power
+                Automate, Reading Coach, Sway, and To Do are also featured under
+                the "More from Microsoft 365" section, each with a short
+                description of their purpose. The interface includes options to
+                "Install apps" and a "Buy Microsoft 365" button.
+                <img src="/images/allfeature.png" alt="Microsoft 365 Options" />
               </p>
             </div>
             <section class="list-Problem mt-5">
-              <h4 style="font-style: normal; font-size: 3rem">Having problems?</h4>
+              <h4 style="font-style: normal; font-size: 3rem">
+                Having problems?
+              </h4>
               <p class="p-problem">Here are some articles that can help you:</p>
               <ul class="list-hav">
                 <li class="list-link-hav">
@@ -309,13 +331,19 @@
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                 <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
                 <p>
-                  <a class="text-white" href="index.html">Mozilla Thunderbird</a>
+                  <a class="text-white" href="index.html"
+                    >Mozilla Thunderbird</a
+                  >
                 </p>
                 <p>
-                  <a class="text-white" href="assets/html/outlook.html">Ms Outlook</a>
+                  <a class="text-white" href="assets/html/outlook.html"
+                    >Ms Outlook</a
+                  >
                 </p>
                 <p>
-                  <a class="text-white" href="assets/html/gmailguideline.html">Google Mail Send As</a>
+                  <a class="text-white" href="assets/html/gmailguideline.html"
+                    >Google Mail Send As</a
+                  >
                 </p>
               </div>
               <hr class="w-100 clearfix d-md-none" />
@@ -324,13 +352,19 @@
                   Useful links
                 </h6>
                 <p>
-                  <a class="text-white" href="index.html">How to set up Mozilla?</a>
+                  <a class="text-white" href="index.html"
+                    >How to set up Mozilla?</a
+                  >
                 </p>
                 <p>
-                  <a class="text-white" href="assets/html/outlook.html">How to set up Outlook?</a>
+                  <a class="text-white" href="assets/html/outlook.html"
+                    >How to set up Outlook?</a
+                  >
                 </p>
                 <p>
-                  <a class="text-white" href="assets/html/gmailguideline.html">How to set up Google Mail send As?</a>
+                  <a class="text-white" href="assets/html/gmailguideline.html"
+                    >How to set up Google Mail send As?</a
+                  >
                 </p>
                 <p>
                   <a class="text-white" href="#help">Help</a>
