@@ -13,27 +13,29 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Layout improvements for .image-step */
-.image-step {
+/* Layout for .full-content-img */
+.full-content-img {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
   flex-wrap: wrap;
   margin-bottom: 40px;
 }
 
-.image-step img {
+.full-content-img img {
   width: 100%;
-  max-width: 400px;
-  height: auto;
+  max-width: 800px; /* Larger for full content visibility */
+  height: auto; /* Preserve aspect ratio */
   transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
-  opacity: 0.8;
+  opacity: 0.9;
   will-change: transform, opacity;
+  border-radius: 8px; /* Aesthetic rounding */
 }
 
-/* Hover effect on images */
-.image-step img:hover {
-  transform: scale(1.05);
+/* Hover effect for images */
+.full-content-img img:hover {
+  transform: scale(1.03);
   opacity: 1;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -43,7 +45,7 @@ h3,
 p,
 span,
 ul,
-.image-step {
+.full-content-img {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease, transform 1s ease;
@@ -54,7 +56,7 @@ h3,
 p,
 span,
 ul,
-.image-step.fade-in {
+.full-content-img.fade-in {
   opacity: 1;
   transform: translateY(0);
 }
@@ -94,13 +96,8 @@ span {
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.9);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  /* padding: 1rem 2rem; */
   color: white;
 }
-
-/* Navbar title */
-
-/* Images */
 
 /* Media Queries for improved responsiveness */
 @media (max-width: 576px) {
@@ -109,17 +106,21 @@ span {
     font-size: 1.5rem;
     text-align: center;
   }
+  .full-content-img img {
+    max-width: 100%; /* Full width on small screens */
+    min-width: 280px; /* Minimum width for tiny screens */
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-  /* Small devices (landscape phones, 576px and up) */
+  /* Small devices (landscape phones) */
   h1 {
     font-size: 1.8rem;
   }
 }
 
 @media (min-width: 768px) {
-  /* Medium devices (tablets, 768px and up) */
+  /* Medium devices (tablets) */
   h1 {
     font-size: 2rem;
   }
